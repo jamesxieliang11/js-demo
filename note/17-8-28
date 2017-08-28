@@ -1,12 +1,25 @@
+//1 精度问题
 0.1+0.2
 
+//2.1 数组的sort排序函数用法
 function sortNumber(a,b)
 {
 console.log(a,b)
 return a - b
 }
-
-var arr ="10", "5", "40", "25", "1000", "1"];
-
+var arr =["10", "5", "40", "25", "1000", "1"];
 console.log(arr)
 console.log(arr.sort(sortNumber))
+
+//2.2 数组的sort排序思路模拟
+var arr = [10,5, 40, 25, 1000, 1]
+for(var i=0;i<=arr.length;i++){
+	if(arr[i]>arr[i+1]){
+		var m=arr[i];
+		arr[i]=arr[i+1];
+		arr[i+1]=m;
+		i=i-2;
+		console.log(i)
+	}
+}
+
