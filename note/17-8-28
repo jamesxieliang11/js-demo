@@ -23,3 +23,4 @@ for(var i=0;i<=arr.length;i++){
 	}
 }
 
+//js闭包理解
